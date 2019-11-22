@@ -8,9 +8,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login.html").setViewName("login");
-        registry.addViewController("/hello.html").setViewName("hello");
-        registry.addViewController("/index.html").setViewName("index");
+        registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/hello").setViewName("hello");
+        registry.addViewController("/index").setViewName("index");
+        registry.addViewController("/").setViewName("index");
     }
 
 
